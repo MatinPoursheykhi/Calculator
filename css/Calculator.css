@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #403b4a, #e7e9bb);
+  }
+  *::selection {
+    background-color: red;
+  }
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 40px;
+  }
+  .calcScreen {
+    width: 350px;
+    height: 550px;
+    border-radius: 20px;
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #ffffff80;
+    border-right: 1px solid #ffffff80;
+    box-shadow: 1px 1px 10px #000, 4px 4px 7px #f9f9f980;
+    border-radius: 15px;
+    background: #ffffff1a;
+  }
+  h2 {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    color: #fff;
+  }
+  h2::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-color: rgb(129, 80, 80);
+    height: 5px;
+    margin: 5px auto 0;
+    border-radius: 10px;
+  }
+  .inpWrapper {
+    width: 100%;
+    height: 20%;
+  }
+  #calculatePlace {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.695);
+    border: none;
+    border: 10px double rgba(189, 189, 189, 0.208) ;
+    outline: none;
+    margin-top: 0.8rem;
+    color: #fff;
+    font-size: 40px;
+    padding: 0 15px;
+    text-align: right;
+  }
+  #keysWrapper {
+    width: 100%;
+    height: 80%;
+    color: rgb(34, 34, 34);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1.2rem 10px;
+  }
+  #keysWrapper > button {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid rgb(34, 34, 34);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0 5px;
+    transition: 0.1s linear all;
+  }
+  #keysWrapper > button:hover {
+    background-color: rgb(114, 70, 70);
+  }
+  #keysWrapper > button:nth-of-type(17) {
+    background-color: rgb(145, 18, 18);
+    color: #fff;
+  }
+  #keysWrapper > button:nth-of-type(8) {
+    padding-top: 15px;
+  }
+  #keysWrapper > button:nth-of-type(19) {
+    width: 39%;
+    height: 15%;
+    border-radius: 10px;
+    background-color: #000;
+    color: #fff;
+  }

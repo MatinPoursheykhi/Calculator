@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/Calculator.css">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <h1>@Mateen.psi</h1>
+    <section class="calcScreen">
+      <h2>CALCULATOR</h2>
+      <div class="inpWrapper">
+        <input type="text" id="calculatePlace" />
+      </div>
+      <div id="keysWrapper">
+        <button value="7">7</button>
+        <button value="8">8</button>
+        <button value="9">9</button>
+        <button value="/">/</button>
+        <button value="6">6</button>
+        <button value="5">5</button>
+        <button value="4">4</button>
+        <button value="*">*</button>
+        <button value="3">3</button>
+        <button value="2">2</button>
+        <button value="1">1</button>
+        <button value="+">+</button>
+        <button value="%">%</button>
+        <button value="0">0</button>
+        <button value=".">.</button>
+        <button value="-">-</button>
+        <button value="C" onclick="del(this)">C</button>
+        <button value="" onclick="clearAll(this)">AC</button>
+        <button value="=" onclick="result(this)">=</button>
+      </div>
+    </section>
+  </body>
+  <script src="./js/Calculator.js"></script>
+</html>
